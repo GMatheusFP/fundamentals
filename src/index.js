@@ -1,6 +1,8 @@
 import Title from "./components/title";
 import Button from "./components/button";
 import Image from "./components/image";
+import warning from "./templates/warning.html";
+import './styles/warning.css';
 
 const title = new Title();
 const button = new Button();
@@ -18,3 +20,7 @@ let{a, b, ...test} = obj;
 console.log(a);
 console.log(b);
 console.log(test);
+
+// html import
+const body = document.querySelector('body');
+body.innerHTML += warning;
