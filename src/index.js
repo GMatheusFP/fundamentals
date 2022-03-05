@@ -1,8 +1,11 @@
-import Title from "./components/title";
-import Button from "./components/button";
-import Image from "./components/image";
-import warning from "./templates/warning.html";
+import Title from './components/title';
+import Button from './components/button';
+import Image from './components/image';
+
+import warning from './templates/warning.html';
 import './styles/warning.css';
+
+import phraseTxt from './files/phrase.txt';
 
 const title = new Title();
 const button = new Button();
@@ -24,3 +27,7 @@ console.log(test);
 // html import
 const body = document.querySelector('body');
 body.innerHTML += warning;
+
+// txt import
+const phrase = phraseTxt;
+console.log(phrase);
